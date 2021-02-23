@@ -74,8 +74,8 @@ int main(int argc, const char * argv[]) {
                     NSString *wordLengthString = [NSString stringWithFormat:@"%i %@", wordLength, prefix];
                     NSLog(@"%@", wordLengthString);
                 } else if ([option isEqualToString:@"8"]) {
-                    NSString *replacedString = [strInput stringByReplacingOccurrencesOfString:@"," withString:@""];
-                    NSLog(@"%@", replacedString);
+                    NSString *replaedString = [[strInput componentsSeparatedByCharactersInSet:[[NSCharacterSet letterCharacterSet] invertedSet]] componentsJoinedByString:@""];
+                    NSLog(@"%@", replaedString);
                 } else if (option == nil || [option isEqualToString:@"9"]) {
                     NSLog(@"Next String!");
                     break;
