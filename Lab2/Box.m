@@ -31,8 +31,8 @@
 
 - (int) possibleIncludeBox: (Box *) box
 {
-    int biggerBoxVolume = [self calcVolume] > [box calcVolume] ? (int)[self calcVolume] : (int)[box calcVolume];
-    int smallerBoxVolume = [self calcVolume] > [box calcVolume] ? (int)[box calcVolume] : (int)[self calcVolume];
+    float biggerBoxVolume = [self calcVolume] > [box calcVolume] ? [self calcVolume] : [box calcVolume];
+    float smallerBoxVolume = [self calcVolume] > [box calcVolume] ? [box calcVolume] : [self calcVolume];
     
     int possibleQuantity = biggerBoxVolume / smallerBoxVolume;
     return possibleQuantity;
