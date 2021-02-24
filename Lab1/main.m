@@ -28,7 +28,7 @@ void
 displayNumberize(NSString *strInput) {
     if ([strInput isEqualTo:@"0"]) {
         int value = [strInput intValue];
-        NSLog(@"Numberized to %i", value);
+        NSLog(@"Numberized to %d", value);
         return;
     }
     
@@ -74,7 +74,7 @@ int main(int argc, const char * argv[]) {
                     NSString *wordLengthString = [NSString stringWithFormat:@"%i %@", wordLength, prefix];
                     NSLog(@"%@", wordLengthString);
                 } else if ([option isEqualToString:@"8"]) {
-                    NSString *replaedString = [[strInput componentsSeparatedByCharactersInSet:[[NSCharacterSet letterCharacterSet] invertedSet]] componentsJoinedByString:@""];
+                    NSString *replaedString = [[strInput componentsSeparatedByCharactersInSet:[[NSCharacterSet alphanumericCharacterSet] invertedSet]] componentsJoinedByString:@""];
                     NSLog(@"%@", replaedString);
                 } else if (option == nil || [option isEqualToString:@"9"]) {
                     NSLog(@"Next String!");
