@@ -112,8 +112,8 @@
 			children = (
 				0A5A0BCC25E465E10093437A /* Lab1 */,
 				0A5A0BF125E5B9A90093437A /* Lab2 */,
-				0A5A0BDD25E584A80093437A /* Working */,
 				0AF398A225E7095000FD7263 /* Lab3 */,
+				0A5A0BDD25E584A80093437A /* Working */,
 				0A5A0BCB25E465E10093437A /* Products */,
 			);
 			sourceTree = "<group>";
