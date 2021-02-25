@@ -37,4 +37,3 @@ int main(int argc, const char * argv[]) {
     }
     return 0;
 }
-DaiSugi01/cornerstone_objective-c
