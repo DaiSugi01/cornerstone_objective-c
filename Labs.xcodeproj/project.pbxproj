@@ -9,9 +9,12 @@
 /* Begin PBXBuildFile section */
 		0A5A0BCE25E465E10093437A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A5A0BCD25E465E10093437A /* main.m */; };
 		0A5A0BDF25E584A80093437A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A5A0BDE25E584A80093437A /* main.m */; };
-		0A5A0BE725E5A91D0093437A /* DateCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A5A0BE625E5A91D0093437A /* DateCalculator.m */; };
 		0A5A0BF325E5B9A90093437A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A5A0BF225E5B9A90093437A /* main.m */; };
 		0A5A0BFF25E5BD8B0093437A /* Box.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A5A0BFE25E5BD8B0093437A /* Box.m */; };
+		0AF398A425E7095000FD7263 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AF398A325E7095000FD7263 /* main.m */; };
+		0AF398B325E7241F00FD7263 /* AdditionQuestion.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AF398B225E7241F00FD7263 /* AdditionQuestion.m */; };
+		0AF398BD25E72D7400FD7263 /* InputHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AF398BC25E72D7400FD7263 /* InputHandler.m */; };
+		0AF398C425E730DF00FD7263 /* ScoreKeeper.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AF398C325E730DF00FD7263 /* ScoreKeeper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -42,6 +45,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		0AF3989F25E7095000FD7263 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -49,12 +61,18 @@
 		0A5A0BCD25E465E10093437A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0A5A0BDC25E584A80093437A /* Working */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Working; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A5A0BDE25E584A80093437A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		0A5A0BE525E5A91D0093437A /* DateCalculator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DateCalculator.h; sourceTree = "<group>"; };
-		0A5A0BE625E5A91D0093437A /* DateCalculator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DateCalculator.m; sourceTree = "<group>"; };
 		0A5A0BF025E5B9A90093437A /* Lab2 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Lab2; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A5A0BF225E5B9A90093437A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0A5A0BFD25E5BD8B0093437A /* Box.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Box.h; sourceTree = "<group>"; };
 		0A5A0BFE25E5BD8B0093437A /* Box.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Box.m; sourceTree = "<group>"; };
+		0AF398A125E7095000FD7263 /* Lab3 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Lab3; sourceTree = BUILT_PRODUCTS_DIR; };
+		0AF398A325E7095000FD7263 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0AF398B125E7241F00FD7263 /* AdditionQuestion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdditionQuestion.h; sourceTree = "<group>"; };
+		0AF398B225E7241F00FD7263 /* AdditionQuestion.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AdditionQuestion.m; sourceTree = "<group>"; };
+		0AF398BB25E72D7400FD7263 /* InputHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InputHandler.h; sourceTree = "<group>"; };
+		0AF398BC25E72D7400FD7263 /* InputHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InputHandler.m; sourceTree = "<group>"; };
+		0AF398C225E730DF00FD7263 /* ScoreKeeper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScoreKeeper.h; sourceTree = "<group>"; };
+		0AF398C325E730DF00FD7263 /* ScoreKeeper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScoreKeeper.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +97,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0AF3989E25E7095000FD7263 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -88,6 +113,7 @@
 				0A5A0BCC25E465E10093437A /* Lab1 */,
 				0A5A0BF125E5B9A90093437A /* Lab2 */,
 				0A5A0BDD25E584A80093437A /* Working */,
+				0AF398A225E7095000FD7263 /* Lab3 */,
 				0A5A0BCB25E465E10093437A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -98,6 +124,7 @@
 				0A5A0BCA25E465E10093437A /* Lab1 */,
 				0A5A0BDC25E584A80093437A /* Working */,
 				0A5A0BF025E5B9A90093437A /* Lab2 */,
+				0AF398A125E7095000FD7263 /* Lab3 */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -114,8 +141,6 @@
 			isa = PBXGroup;
 			children = (
 				0A5A0BDE25E584A80093437A /* main.m */,
-				0A5A0BE525E5A91D0093437A /* DateCalculator.h */,
-				0A5A0BE625E5A91D0093437A /* DateCalculator.m */,
 			);
 			path = Working;
 			sourceTree = "<group>";
@@ -128,6 +153,20 @@
 				0A5A0BFE25E5BD8B0093437A /* Box.m */,
 			);
 			path = Lab2;
+			sourceTree = "<group>";
+		};
+		0AF398A225E7095000FD7263 /* Lab3 */ = {
+			isa = PBXGroup;
+			children = (
+				0AF398A325E7095000FD7263 /* main.m */,
+				0AF398B125E7241F00FD7263 /* AdditionQuestion.h */,
+				0AF398B225E7241F00FD7263 /* AdditionQuestion.m */,
+				0AF398BB25E72D7400FD7263 /* InputHandler.h */,
+				0AF398BC25E72D7400FD7263 /* InputHandler.m */,
+				0AF398C225E730DF00FD7263 /* ScoreKeeper.h */,
+				0AF398C325E730DF00FD7263 /* ScoreKeeper.m */,
+			);
+			path = Lab3;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -184,12 +223,30 @@
 			productReference = 0A5A0BF025E5B9A90093437A /* Lab2 */;
 			productType = "com.apple.product-type.tool";
 		};
+		0AF398A025E7095000FD7263 /* Lab3 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0AF398A525E7095000FD7263 /* Build configuration list for PBXNativeTarget "Lab3" */;
+			buildPhases = (
+				0AF3989D25E7095000FD7263 /* Sources */,
+				0AF3989E25E7095000FD7263 /* Frameworks */,
+				0AF3989F25E7095000FD7263 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Lab3;
+			productName = Lab3;
+			productReference = 0AF398A125E7095000FD7263 /* Lab3 */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		0A5A0BC225E465E10093437A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 1240;
 				LastUpgradeCheck = 1240;
 				TargetAttributes = {
 					0A5A0BC925E465E10093437A = {
@@ -199,6 +256,9 @@
 						CreatedOnToolsVersion = 12.4;
 					};
 					0A5A0BEF25E5B9A90093437A = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					0AF398A025E7095000FD7263 = {
 						CreatedOnToolsVersion = 12.4;
 					};
 				};
@@ -218,6 +278,7 @@
 			targets = (
 				0A5A0BC925E465E10093437A /* Lab1 */,
 				0A5A0BEF25E5B9A90093437A /* Lab2 */,
+				0AF398A025E7095000FD7263 /* Lab3 */,
 				0A5A0BDB25E584A80093437A /* Working */,
 			);
 		};
@@ -237,7 +298,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A5A0BDF25E584A80093437A /* main.m in Sources */,
-				0A5A0BE725E5A91D0093437A /* DateCalculator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,6 +307,17 @@
 			files = (
 				0A5A0BF325E5B9A90093437A /* main.m in Sources */,
 				0A5A0BFF25E5BD8B0093437A /* Box.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0AF3989D25E7095000FD7263 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AF398C425E730DF00FD7263 /* ScoreKeeper.m in Sources */,
+				0AF398A425E7095000FD7263 /* main.m in Sources */,
+				0AF398BD25E72D7400FD7263 /* InputHandler.m in Sources */,
+				0AF398B325E7241F00FD7263 /* AdditionQuestion.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,6 +495,26 @@
 			};
 			name = Release;
 		};
+		0AF398A625E7095000FD7263 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7AC8SRDY3Z;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		0AF398A725E7095000FD7263 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7AC8SRDY3Z;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -459,6 +550,15 @@
 			buildConfigurations = (
 				0A5A0BF525E5B9A90093437A /* Debug */,
 				0A5A0BF625E5B9A90093437A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0AF398A525E7095000FD7263 /* Build configuration list for PBXNativeTarget "Lab3" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0AF398A625E7095000FD7263 /* Debug */,
+				0AF398A725E7095000FD7263 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

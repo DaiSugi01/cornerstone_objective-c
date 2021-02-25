@@ -11,9 +11,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface Box : NSObject
 
-@property (assign) float height;
-@property (assign) float width;
-@property (assign) float length;
+@property (assign, readonly) float height;
+@property (assign, readonly) float width;
+@property (assign, readonly) float length;
 
 - (instancetype) initWithHeight: (float) height AndWidth: (float) width AndLength: (float) length;
 - (float) calcVolume;
