@@ -27,6 +27,7 @@
 		0AEAB99F25E8D008006D904D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AEAB99E25E8D008006D904D /* main.m */; };
 		0AEAB9AB25E8D0F3006D904D /* NSString+PigLatin.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AEAB9AA25E8D0F3006D904D /* NSString+PigLatin.m */; };
 		0AEAB9F825E9D5AA006D904D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AEAB9F725E9D5AA006D904D /* main.m */; };
+		0AEABA0525E9D64C006D904D /* Dice.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AEABA0425E9D64C006D904D /* Dice.m */; };
 		0AF398A425E7095000FD7263 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AF398A325E7095000FD7263 /* main.m */; };
 		0AF398B325E7241F00FD7263 /* AdditionQuestion.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AF398B225E7241F00FD7263 /* AdditionQuestion.m */; };
 		0AF398BD25E72D7400FD7263 /* InputHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AF398BC25E72D7400FD7263 /* InputHandler.m */; };
@@ -140,6 +141,8 @@
 		0AEAB9AA25E8D0F3006D904D /* NSString+PigLatin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+PigLatin.m"; sourceTree = "<group>"; };
 		0AEAB9F525E9D5AA006D904D /* Lab6(Threelow) */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Lab6(Threelow)"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AEAB9F725E9D5AA006D904D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0AEABA0325E9D64C006D904D /* Dice.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Dice.h; sourceTree = "<group>"; };
+		0AEABA0425E9D64C006D904D /* Dice.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Dice.m; sourceTree = "<group>"; };
 		0AF398A125E7095000FD7263 /* Lab3 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Lab3; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AF398A325E7095000FD7263 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0AF398B125E7241F00FD7263 /* AdditionQuestion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdditionQuestion.h; sourceTree = "<group>"; };
@@ -303,6 +306,8 @@
 			isa = PBXGroup;
 			children = (
 				0AEAB9F725E9D5AA006D904D /* main.m */,
+				0AEABA0325E9D64C006D904D /* Dice.h */,
+				0AEABA0425E9D64C006D904D /* Dice.m */,
 			);
 			path = "Lab6(Threelow)";
 			sourceTree = "<group>";
@@ -558,6 +563,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AEABA0525E9D64C006D904D /* Dice.m in Sources */,
 				0AEAB9F825E9D5AA006D904D /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
