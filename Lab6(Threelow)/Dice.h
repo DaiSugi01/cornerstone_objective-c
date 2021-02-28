@@ -11,9 +11,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface Dice : NSObject
 
-@property NSString *daiceValue;
+@property NSInteger diceValue;
+@property NSString *diceEmoji;
 
 -(void) genereteRandomValue;
+-(void) makeAllDiceThree;
 
 @end
 

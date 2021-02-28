@@ -3,4 +3,86 @@
    uuid = "D43F1E70-F8BA-499A-949D-66D67DF2513F"
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D9220121-85D4-4B6B-A178-64A126DD4E98"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Lab6(Threelow)/GameController.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "157"
+            endingLineNumber = "157"
+            landmarkName = "-secretCoomanRun"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E522C02C-2A3A-4579-8D3E-2454DFC6F185"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Lab6(Threelow)/GameController.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "154"
+            endingLineNumber = "154"
+            landmarkName = "-secretCoomanRun"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "E522C02C-2A3A-4579-8D3E-2454DFC6F185 - 52e18a479b88c336"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[GameController secretCoomanRun]"
+                  moduleName = "Lab6(Threelow)"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/DKS/projects/Cornerstone/Objective-C/Labs/Lab6(Threelow)/GameController.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "143"
+                  endingLineNumber = "143"
+                  offsetFromSymbolStart = "95">
+               </Location>
+               <Location
+                  uuid = "E522C02C-2A3A-4579-8D3E-2454DFC6F185 - 52e18a479b88c336"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[GameController secretCoomanRun]"
+                  moduleName = "Lab6(Threelow)"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/DKS/projects/Cornerstone/Objective-C/Labs/Lab6(Threelow)/GameController.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "143"
+                  endingLineNumber = "143"
+                  offsetFromSymbolStart = "115">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DE7C04E2-ED25-4C92-A734-4B07508EE9FE"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Lab6(Threelow)/GameController.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "70"
+            endingLineNumber = "70"
+            landmarkName = "-holdAllDice"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

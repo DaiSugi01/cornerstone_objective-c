@@ -7,49 +7,72 @@
 
 #import "Dice.h"
 
-@implementation Dice
+@interface Dice() {
+    NSString *_dice1Emoji;
+    NSString *_dice2Emoji;
+    NSString *_dice3Emoji;
+    NSString *_dice4Emoji;
+    NSString *_dice5Emoji;
+    NSString *_dice6Emoji;
+}
 
--(void) genereteRandomValue {
-    NSInteger randomNum = arc4random_uniform(6) + 1;
-    
-    NSString *dice1 = @"\u2680";
-    NSString *dice2 = @"\u2681";
-    NSString *dice3 = @"\u2682";
-    NSString *dice4 = @"\u2683";
-    NSString *dice5 = @"\u2684";
-    NSString *dice6 = @"\u2685";
+@end
 
-    switch (randomNum) {
-        case 1:
-            self.daiceValue = dice1;
-            break;
-        case 2:
-            self.daiceValue = dice2;
-            break;
-        case 3:
-            self.daiceValue = dice3;
-            break;
-        case 4:
-            self.daiceValue = dice4;
-            break;
-        case 5:
-            self.daiceValue = dice5;
-            break;
-        case 6:
-            self.daiceValue = dice6;
-            break;
-        default:
-            break;
-    }
+@implementation Dice {
+    NSInteger _diceValue;
+    NSString *_diceEmoji;
 }
 
 - (instancetype)init
 {
     self = [super init];
     if (self) {
-        [self genereteRandomValue];
+        _diceValue = 0;
+        _diceEmoji = @"\u2682";
+        
+        _dice1Emoji = @"\u2680";
+        _dice2Emoji = @"\u2681";
+        _dice3Emoji = @"\u2682";
+        _dice4Emoji = @"\u2683";
+        _dice5Emoji = @"\u2684";
+        _dice6Emoji = @"\u2685";
     }
     return self;
+}
+
+-(void) genereteRandomValue {
+    self.diceValue = arc4random_uniform(6) + 1;
+
+
+    
+    switch (self.diceValue) {
+        case 1:
+            self.diceEmoji = _dice1Emoji;
+            break;
+        case 2:
+            self.diceEmoji = _dice2Emoji;
+            break;
+        case 3:
+            self.diceEmoji = _dice3Emoji;
+            self.diceValue = 0;
+            break;
+        case 4:
+            self.diceEmoji = _dice4Emoji;
+            break;
+        case 5:
+            self.diceEmoji = _dice5Emoji;
+            break;
+        case 6:
+            self.diceEmoji = _dice6Emoji;
+            break;
+        default:
+            break;
+    }
+}
+
+-(void) makeAllDiceThree {
+    [self setDiceValue:0];
+    [self setDiceEmoji:_dice3Emoji];
 }
 
 @end
