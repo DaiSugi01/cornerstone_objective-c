@@ -11,6 +11,10 @@
 		0A44EC5425EE390800BE5534 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A44EC4C25EE390700BE5534 /* main.m */; };
 		0A44EC5525EE390800BE5534 /* InputHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A44EC4E25EE390700BE5534 /* InputHandler.m */; };
 		0A44EC5625EE390800BE5534 /* Pizza.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A44EC5125EE390700BE5534 /* Pizza.m */; };
+		0A44EC8C25EE41DE00BE5534 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A44EC8425EE41DD00BE5534 /* main.m */; };
+		0A44EC8D25EE41DE00BE5534 /* Pizza.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A44EC8525EE41DD00BE5534 /* Pizza.m */; };
+		0A44EC8E25EE41DE00BE5534 /* InputHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A44EC8725EE41DD00BE5534 /* InputHandler.m */; };
+		0A44EC8F25EE41DE00BE5534 /* Kitchen.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A44EC8A25EE41DD00BE5534 /* Kitchen.m */; };
 		0A5A0BCE25E465E10093437A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A5A0BCD25E465E10093437A /* main.m */; };
 		0A5A0BF325E5B9A90093437A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A5A0BF225E5B9A90093437A /* main.m */; };
 		0A5A0BFF25E5BD8B0093437A /* Box.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A5A0BFE25E5BD8B0093437A /* Box.m */; };
@@ -42,6 +46,15 @@
 
 /* Begin PBXCopyFilesBuildPhase section */
 		0A44EC3125EE389900BE5534 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		0A44EC6925EE41AA00BE5534 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -125,6 +138,15 @@
 		0A44EC5025EE390700BE5534 /* Kitchen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Kitchen.h; sourceTree = "<group>"; };
 		0A44EC5125EE390700BE5534 /* Pizza.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Pizza.m; sourceTree = "<group>"; };
 		0A44EC5225EE390800BE5534 /* Pizza.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pizza.h; sourceTree = "<group>"; };
+		0A44EC6B25EE41AA00BE5534 /* Lab11 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Lab11; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A44EC8425EE41DD00BE5534 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0A44EC8525EE41DD00BE5534 /* Pizza.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Pizza.m; sourceTree = "<group>"; };
+		0A44EC8625EE41DD00BE5534 /* InputHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputHandler.h; sourceTree = "<group>"; };
+		0A44EC8725EE41DD00BE5534 /* InputHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InputHandler.m; sourceTree = "<group>"; };
+		0A44EC8825EE41DD00BE5534 /* Kitchen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Kitchen.h; sourceTree = "<group>"; };
+		0A44EC8925EE41DD00BE5534 /* PizzaRestaurant-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PizzaRestaurant-Prefix.pch"; sourceTree = "<group>"; };
+		0A44EC8A25EE41DD00BE5534 /* Kitchen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Kitchen.m; sourceTree = "<group>"; };
+		0A44EC8B25EE41DE00BE5534 /* Pizza.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pizza.h; sourceTree = "<group>"; };
 		0A5A0BCA25E465E10093437A /* Lab1 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Lab1; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A5A0BCD25E465E10093437A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0A5A0BF025E5B9A90093437A /* Lab2 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Lab2; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -183,6 +205,13 @@
 
 /* Begin PBXFrameworksBuildPhase section */
 		0A44EC3025EE389900BE5534 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A44EC6825EE41AA00BE5534 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -256,6 +285,21 @@
 			path = Lab8;
 			sourceTree = "<group>";
 		};
+		0A44EC6C25EE41AA00BE5534 /* Lab11 */ = {
+			isa = PBXGroup;
+			children = (
+				0A44EC8625EE41DD00BE5534 /* InputHandler.h */,
+				0A44EC8725EE41DD00BE5534 /* InputHandler.m */,
+				0A44EC8825EE41DD00BE5534 /* Kitchen.h */,
+				0A44EC8A25EE41DD00BE5534 /* Kitchen.m */,
+				0A44EC8425EE41DD00BE5534 /* main.m */,
+				0A44EC8B25EE41DE00BE5534 /* Pizza.h */,
+				0A44EC8525EE41DD00BE5534 /* Pizza.m */,
+				0A44EC8925EE41DD00BE5534 /* PizzaRestaurant-Prefix.pch */,
+			);
+			path = Lab11;
+			sourceTree = "<group>";
+		};
 		0A5A0BC125E465E10093437A = {
 			isa = PBXGroup;
 			children = (
@@ -265,8 +309,9 @@
 				0AEAB94C25E8603D006D904D /* Lab4 */,
 				0A61DC7225E78D0200FFFCDA /* Lab5 */,
 				0AEAB9F625E9D5AA006D904D /* Lab6(Threelow) */,
-				0AEAB99D25E8D008006D904D /* Lab13 */,
 				0A44EC3425EE389900BE5534 /* Lab8 */,
+				0AEAB99D25E8D008006D904D /* Lab13 */,
+				0A44EC6C25EE41AA00BE5534 /* Lab11 */,
 				0A5A0BCB25E465E10093437A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -282,6 +327,7 @@
 				0AEAB99C25E8D008006D904D /* Lab13 */,
 				0AEAB9F525E9D5AA006D904D /* Lab6(Threelow) */,
 				0A44EC3325EE389900BE5534 /* Lab8 */,
+				0A44EC6B25EE41AA00BE5534 /* Lab11 */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -400,6 +446,23 @@
 			name = Lab8;
 			productName = Lab8;
 			productReference = 0A44EC3325EE389900BE5534 /* Lab8 */;
+			productType = "com.apple.product-type.tool";
+		};
+		0A44EC6A25EE41AA00BE5534 /* Lab11 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0A44EC6F25EE41AA00BE5534 /* Build configuration list for PBXNativeTarget "Lab11" */;
+			buildPhases = (
+				0A44EC6725EE41AA00BE5534 /* Sources */,
+				0A44EC6825EE41AA00BE5534 /* Frameworks */,
+				0A44EC6925EE41AA00BE5534 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Lab11;
+			productName = Lab11;
+			productReference = 0A44EC6B25EE41AA00BE5534 /* Lab11 */;
 			productType = "com.apple.product-type.tool";
 		};
 		0A5A0BC925E465E10093437A /* Lab1 */ = {
@@ -533,6 +596,9 @@
 					0A44EC3225EE389900BE5534 = {
 						CreatedOnToolsVersion = 12.4;
 					};
+					0A44EC6A25EE41AA00BE5534 = {
+						CreatedOnToolsVersion = 12.4;
+					};
 					0A5A0BC925E465E10093437A = {
 						CreatedOnToolsVersion = 12.4;
 					};
@@ -575,8 +641,9 @@
 				0AEAB94A25E8603D006D904D /* Lab4 */,
 				0A61DC7025E78D0200FFFCDA /* Lab5 */,
 				0AEAB9F425E9D5AA006D904D /* Lab6(Threelow) */,
-				0AEAB99B25E8D008006D904D /* Lab13 */,
 				0A44EC3225EE389900BE5534 /* Lab8 */,
+				0AEAB99B25E8D008006D904D /* Lab13 */,
+				0A44EC6A25EE41AA00BE5534 /* Lab11 */,
 			);
 		};
 /* End PBXProject section */
@@ -590,6 +657,17 @@
 				0A44EC5425EE390800BE5534 /* main.m in Sources */,
 				0A44EC5525EE390800BE5534 /* InputHandler.m in Sources */,
 				0A44EC5325EE390800BE5534 /* Kitchen.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A44EC6725EE41AA00BE5534 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A44EC8D25EE41DE00BE5534 /* Pizza.m in Sources */,
+				0A44EC8E25EE41DE00BE5534 /* InputHandler.m in Sources */,
+				0A44EC8F25EE41DE00BE5534 /* Kitchen.m in Sources */,
+				0A44EC8C25EE41DE00BE5534 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -683,6 +761,26 @@
 			name = Debug;
 		};
 		0A44EC3825EE389900BE5534 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7AC8SRDY3Z;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		0A44EC7025EE41AA00BE5534 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7AC8SRDY3Z;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		0A44EC7125EE41AA00BE5534 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -951,6 +1049,15 @@
 			buildConfigurations = (
 				0A44EC3725EE389900BE5534 /* Debug */,
 				0A44EC3825EE389900BE5534 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0A44EC6F25EE41AA00BE5534 /* Build configuration list for PBXNativeTarget "Lab11" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A44EC7025EE41AA00BE5534 /* Debug */,
+				0A44EC7125EE41AA00BE5534 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
