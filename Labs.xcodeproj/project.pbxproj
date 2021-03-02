@@ -17,6 +17,12 @@
 		0A44EC8F25EE41DE00BE5534 /* Kitchen.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A44EC8A25EE41DD00BE5534 /* Kitchen.m */; };
 		0A44ECF325EE4A5E00BE5534 /* CheeryManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A44ECF225EE4A5E00BE5534 /* CheeryManager.m */; };
 		0A44ECFF25EE4C6500BE5534 /* PickeyManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A44ECFE25EE4C6500BE5534 /* PickeyManager.m */; };
+		0A44ED5025EEFFA700BE5534 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A44ED4725EEFFA700BE5534 /* main.m */; };
+		0A44ED5125EEFFA700BE5534 /* Kitchen.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A44ED4825EEFFA700BE5534 /* Kitchen.m */; };
+		0A44ED5225EEFFA700BE5534 /* PickeyManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A44ED4A25EEFFA700BE5534 /* PickeyManager.m */; };
+		0A44ED5325EEFFA700BE5534 /* Pizza.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A44ED4C25EEFFA700BE5534 /* Pizza.m */; };
+		0A44ED5425EEFFA700BE5534 /* CheeryManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A44ED4E25EEFFA700BE5534 /* CheeryManager.m */; };
+		0A44ED5525EEFFA700BE5534 /* InputHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A44ED4F25EEFFA700BE5534 /* InputHandler.m */; };
 		0A5A0BCE25E465E10093437A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A5A0BCD25E465E10093437A /* main.m */; };
 		0A5A0BF325E5B9A90093437A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A5A0BF225E5B9A90093437A /* main.m */; };
 		0A5A0BFF25E5BD8B0093437A /* Box.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A5A0BFE25E5BD8B0093437A /* Box.m */; };
@@ -57,6 +63,15 @@
 			runOnlyForDeploymentPostprocessing = 1;
 		};
 		0A44EC6925EE41AA00BE5534 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		0A44ED1D25EEFF7900BE5534 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -153,6 +168,19 @@
 		0A44ECF225EE4A5E00BE5534 /* CheeryManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CheeryManager.m; sourceTree = "<group>"; };
 		0A44ECFD25EE4C6500BE5534 /* PickeyManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PickeyManager.h; sourceTree = "<group>"; };
 		0A44ECFE25EE4C6500BE5534 /* PickeyManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PickeyManager.m; sourceTree = "<group>"; };
+		0A44ED1F25EEFF7900BE5534 /* Lab12 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Lab12; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A44ED4425EEFFA600BE5534 /* PizzaRestaurant-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PizzaRestaurant-Prefix.pch"; sourceTree = "<group>"; };
+		0A44ED4525EEFFA600BE5534 /* PickeyManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PickeyManager.h; sourceTree = "<group>"; };
+		0A44ED4625EEFFA700BE5534 /* CheeryManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CheeryManager.h; sourceTree = "<group>"; };
+		0A44ED4725EEFFA700BE5534 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0A44ED4825EEFFA700BE5534 /* Kitchen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Kitchen.m; sourceTree = "<group>"; };
+		0A44ED4925EEFFA700BE5534 /* InputHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputHandler.h; sourceTree = "<group>"; };
+		0A44ED4A25EEFFA700BE5534 /* PickeyManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PickeyManager.m; sourceTree = "<group>"; };
+		0A44ED4B25EEFFA700BE5534 /* Pizza.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pizza.h; sourceTree = "<group>"; };
+		0A44ED4C25EEFFA700BE5534 /* Pizza.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Pizza.m; sourceTree = "<group>"; };
+		0A44ED4D25EEFFA700BE5534 /* Kitchen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Kitchen.h; sourceTree = "<group>"; };
+		0A44ED4E25EEFFA700BE5534 /* CheeryManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CheeryManager.m; sourceTree = "<group>"; };
+		0A44ED4F25EEFFA700BE5534 /* InputHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InputHandler.m; sourceTree = "<group>"; };
 		0A5A0BCA25E465E10093437A /* Lab1 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Lab1; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A5A0BCD25E465E10093437A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0A5A0BF025E5B9A90093437A /* Lab2 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Lab2; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -218,6 +246,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		0A44EC6825EE41AA00BE5534 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A44ED1C25EEFF7900BE5534 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -310,6 +345,25 @@
 			path = Lab11;
 			sourceTree = "<group>";
 		};
+		0A44ED2025EEFF7900BE5534 /* Lab12 */ = {
+			isa = PBXGroup;
+			children = (
+				0A44ED4625EEFFA700BE5534 /* CheeryManager.h */,
+				0A44ED4E25EEFFA700BE5534 /* CheeryManager.m */,
+				0A44ED4925EEFFA700BE5534 /* InputHandler.h */,
+				0A44ED4F25EEFFA700BE5534 /* InputHandler.m */,
+				0A44ED4D25EEFFA700BE5534 /* Kitchen.h */,
+				0A44ED4825EEFFA700BE5534 /* Kitchen.m */,
+				0A44ED4725EEFFA700BE5534 /* main.m */,
+				0A44ED4525EEFFA600BE5534 /* PickeyManager.h */,
+				0A44ED4A25EEFFA700BE5534 /* PickeyManager.m */,
+				0A44ED4B25EEFFA700BE5534 /* Pizza.h */,
+				0A44ED4C25EEFFA700BE5534 /* Pizza.m */,
+				0A44ED4425EEFFA600BE5534 /* PizzaRestaurant-Prefix.pch */,
+			);
+			path = Lab12;
+			sourceTree = "<group>";
+		};
 		0A5A0BC125E465E10093437A = {
 			isa = PBXGroup;
 			children = (
@@ -322,6 +376,7 @@
 				0A44EC3425EE389900BE5534 /* Lab8 */,
 				0A44EC6C25EE41AA00BE5534 /* Lab11 */,
 				0AEAB99D25E8D008006D904D /* Lab13 */,
+				0A44ED2025EEFF7900BE5534 /* Lab12 */,
 				0A5A0BCB25E465E10093437A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -338,6 +393,7 @@
 				0AEAB9F525E9D5AA006D904D /* Lab6(Threelow) */,
 				0A44EC3325EE389900BE5534 /* Lab8 */,
 				0A44EC6B25EE41AA00BE5534 /* Lab11 */,
+				0A44ED1F25EEFF7900BE5534 /* Lab12 */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -475,6 +531,23 @@
 			productReference = 0A44EC6B25EE41AA00BE5534 /* Lab11 */;
 			productType = "com.apple.product-type.tool";
 		};
+		0A44ED1E25EEFF7900BE5534 /* Lab12 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0A44ED2525EEFF7900BE5534 /* Build configuration list for PBXNativeTarget "Lab12" */;
+			buildPhases = (
+				0A44ED1B25EEFF7900BE5534 /* Sources */,
+				0A44ED1C25EEFF7900BE5534 /* Frameworks */,
+				0A44ED1D25EEFF7900BE5534 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Lab12;
+			productName = Lab12;
+			productReference = 0A44ED1F25EEFF7900BE5534 /* Lab12 */;
+			productType = "com.apple.product-type.tool";
+		};
 		0A5A0BC925E465E10093437A /* Lab1 */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0A5A0BD125E465E10093437A /* Build configuration list for PBXNativeTarget "Lab1" */;
@@ -609,6 +682,9 @@
 					0A44EC6A25EE41AA00BE5534 = {
 						CreatedOnToolsVersion = 12.4;
 					};
+					0A44ED1E25EEFF7900BE5534 = {
+						CreatedOnToolsVersion = 12.4;
+					};
 					0A5A0BC925E465E10093437A = {
 						CreatedOnToolsVersion = 12.4;
 					};
@@ -653,6 +729,7 @@
 				0AEAB9F425E9D5AA006D904D /* Lab6(Threelow) */,
 				0A44EC3225EE389900BE5534 /* Lab8 */,
 				0A44EC6A25EE41AA00BE5534 /* Lab11 */,
+				0A44ED1E25EEFF7900BE5534 /* Lab12 */,
 				0AEAB99B25E8D008006D904D /* Lab13 */,
 			);
 		};
@@ -680,6 +757,19 @@
 				0A44EC8F25EE41DE00BE5534 /* Kitchen.m in Sources */,
 				0A44ECFF25EE4C6500BE5534 /* PickeyManager.m in Sources */,
 				0A44EC8C25EE41DE00BE5534 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A44ED1B25EEFF7900BE5534 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A44ED5425EEFFA700BE5534 /* CheeryManager.m in Sources */,
+				0A44ED5525EEFFA700BE5534 /* InputHandler.m in Sources */,
+				0A44ED5325EEFFA700BE5534 /* Pizza.m in Sources */,
+				0A44ED5125EEFFA700BE5534 /* Kitchen.m in Sources */,
+				0A44ED5225EEFFA700BE5534 /* PickeyManager.m in Sources */,
+				0A44ED5025EEFFA700BE5534 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -793,6 +883,26 @@
 			name = Debug;
 		};
 		0A44EC7125EE41AA00BE5534 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7AC8SRDY3Z;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		0A44ED2325EEFF7900BE5534 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7AC8SRDY3Z;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		0A44ED2425EEFF7900BE5534 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -1070,6 +1180,15 @@
 			buildConfigurations = (
 				0A44EC7025EE41AA00BE5534 /* Debug */,
 				0A44EC7125EE41AA00BE5534 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0A44ED2525EEFF7900BE5534 /* Build configuration list for PBXNativeTarget "Lab12" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A44ED2325EEFF7900BE5534 /* Debug */,
+				0A44ED2425EEFF7900BE5534 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
