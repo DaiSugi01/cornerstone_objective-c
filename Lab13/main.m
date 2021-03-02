@@ -10,7 +10,7 @@
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        NSString *str = @"Kale Chips afew";
+        NSString *str = @"Kale Chips af";
         NSLog(@"%@", [str stringByPigLatinization]);
     }
     return 0;

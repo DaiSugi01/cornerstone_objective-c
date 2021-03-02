@@ -11,6 +11,8 @@
 #import "InputHandler.h"
 #import "Kitchen.h"
 #import "Pizza.h"
+#import "CheeryManager.h"
+#import "PickeyManager.h"
 
 int main(int argc, const char * argv[])
 {
@@ -19,11 +21,37 @@ int main(int argc, const char * argv[])
         
         NSLog(@"Please pick your pizza size and toppings:");
         Kitchen *restaurantKitchen = [Kitchen new];
+        
+        CheeryManager *cm;
+        PickeyManager *pm;
+                
         while (TRUE) {
             // Loop forever
             
-            NSLog(@"> ");
-            NSString *inputString = [InputHandler getUserInput];
+            NSInteger pickedManager = [[InputHandler getUserInput: @"\n"
+                                        "@Which manager would you like?\n"
+                                        "0: Cheery Manager\n"
+                                        "1: Pickey Manager\n"
+                                        "2: other"] intValue];
+            
+            switch (pickedManager) {
+                case 0:
+                    if (cm == nil) {
+                        cm = [CheeryManager new];
+                    }
+                    [restaurantKitchen setDelegate: cm];
+                    break;
+                case 1:
+                    if (pm == nil) {
+                        pm = [PickeyManager new];
+                    }
+                    [restaurantKitchen setDelegate: pm];
+                    break;
+                default:
+                    [restaurantKitchen setDelegate: nil];
+            }
+
+            NSString *inputString = [InputHandler getUserInput: @"> "];
                         
             // Take the first word of the command as the size, and the rest as the toppings
             NSArray *commandWords = [inputString componentsSeparatedByString:@" "];
@@ -39,11 +67,11 @@ int main(int argc, const char * argv[])
             enum PizzaSize pizzaSize;
             
             if ([[size lowercaseString] isEqualTo:@"small"]) {
-                pizzaSize = small;
+                pizzaSize = Small;
             } else if ([[size lowercaseString] isEqualTo:@"midium"]) {
-                pizzaSize = midium;
+                pizzaSize = Medium;
             } else if ([[size lowercaseString] isEqualTo:@"large"]) {
-                pizzaSize = large;
+                pizzaSize = Large;
             } else {
                 NSLog(@"Invalid size");
                 continue;
@@ -51,8 +79,11 @@ int main(int argc, const char * argv[])
             
             // And then send some message to the kitchen...
             Pizza *pizza =[restaurantKitchen makePizzaWithSize:pizzaSize toppings:toppings];
-            
-            NSLog(@"Your order is %@ size pizza with %@", [pizza getSize], [[pizza toppings] componentsJoinedByString:@", "]);
+            if (pizza) {
+                NSLog(@"Your order is %@ size pizza with %@", [pizza getSize], [[pizza toppings] componentsJoinedByString:@", "]);
+            } else {
+                NSLog(@"Sorry we can't make pizza you ordered.");
+            }
 
         }
 

@@ -23,11 +23,11 @@
 -(NSString *) getSize
 {
     switch (self.size) {
-        case small:
+        case Small:
             return @"small";
-        case midium:
-            return @"midium";
-        case large:
+        case Medium:
+            return @"medium";
+        case Large:
             return @"large";
     }
 }
