@@ -10,7 +10,7 @@
 
 @implementation InputHandler
 
--(NSString *)getUserInput {
++(NSString *)getUserInput {
     char inputChar[255];
     char *result = fgets(inputChar, 255, stdin);
     

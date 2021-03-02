@@ -12,13 +12,14 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface Pizza : NSObject
 
-enum PizzaSize {Small, Midium, Large};
+enum PizzaSize {small, midium, large};
 
 @property (nonatomic) enum PizzaSize size;
 @property (nonatomic) NSArray<NSString *> *toppings;
 
 - (instancetype)initWithSize:(enum PizzaSize) size AndToppings: (NSArray *)initialToppings;
-- (NSString *)getSize:(NSInteger)size;
+- (NSString *)getSize;
+
 @end
 
 NS_ASSUME_NONNULL_END

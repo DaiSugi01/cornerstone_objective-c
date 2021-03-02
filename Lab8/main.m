@@ -19,33 +19,40 @@ int main(int argc, const char * argv[])
         
         NSLog(@"Please pick your pizza size and toppings:");
         Kitchen *restaurantKitchen = [Kitchen new];
-        InputHandler *ih = [InputHandler new];
         while (TRUE) {
             // Loop forever
             
             NSLog(@"> ");
-            NSString *inputString = [ih getUserInput];
+            NSString *inputString = [InputHandler getUserInput];
                         
             // Take the first word of the command as the size, and the rest as the toppings
             NSArray *commandWords = [inputString componentsSeparatedByString:@" "];
+            
+            if ([commandWords count] == 0) {
+                NSLog(@"Invalid input");
+                continue;
+            }
+            
             NSString *size = commandWords.firstObject;
             NSArray<NSString *> *toppings = [commandWords subarrayWithRange:NSMakeRange(1, [commandWords count] -1)];
-            NSInteger sizeIndex;
+            
+            enum PizzaSize pizzaSize;
             
             if ([[size lowercaseString] isEqualTo:@"small"]) {
-                sizeIndex = 0;
+                pizzaSize = small;
             } else if ([[size lowercaseString] isEqualTo:@"midium"]) {
-                sizeIndex = 1;
+                pizzaSize = midium;
             } else if ([[size lowercaseString] isEqualTo:@"large"]) {
-                sizeIndex = 2;
+                pizzaSize = large;
             } else {
-                sizeIndex = 3;
+                NSLog(@"Invalid size");
+                continue;
             }
             
             // And then send some message to the kitchen...
-            Pizza *pizza =[restaurantKitchen makePizzaWithSize:sizeIndex toppings:toppings];
+            Pizza *pizza =[restaurantKitchen makePizzaWithSize:pizzaSize toppings:toppings];
             
-            NSLog(@"Your order is %@ size pizza with %@", [pizza getSize: sizeIndex], [[pizza toppings] componentsJoinedByString:@", "]);
+            NSLog(@"Your order is %@ size pizza with %@", [pizza getSize], [[pizza toppings] componentsJoinedByString:@", "]);
 
         }
 

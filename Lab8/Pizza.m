@@ -20,17 +20,16 @@
     return self;
 }
 
-- (NSString *)getSize:(NSInteger)size
+-(NSString *) getSize
 {
-    switch (size) {
-        case Small:
+    switch (self.size) {
+        case small:
             return @"small";
-        case Midium:
+        case midium:
             return @"midium";
-        case Large:
+        case large:
             return @"large";
-        default:
-            return @"none";
     }
 }
+
 @end
