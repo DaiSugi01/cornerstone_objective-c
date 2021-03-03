@@ -21,5 +21,7 @@
 - (void)kitchenDidMakePizza:(Pizza *)pizza
 {
     NSLog(@"Thank you for your order!");
+    [self.deliveryService deliverPizza:pizza];
 }
+
 @end

@@ -27,6 +27,8 @@
 		0A44ED8525EF012400BE5534 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A44ED8225EF012300BE5534 /* main.m */; };
 		0A44EDA925EF01D100BE5534 /* Cook.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A44EDA825EF01D100BE5534 /* Cook.m */; };
 		0A44EDB725EF138E00BE5534 /* Chef.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A44EDB625EF138E00BE5534 /* Chef.m */; };
+		0A44EDC525EF159700BE5534 /* DeliveryService.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A44EDC425EF159700BE5534 /* DeliveryService.m */; };
+		0A44EDDE25EF15A600BE5534 /* DeliveryCar.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A44EDDD25EF15A600BE5534 /* DeliveryCar.m */; };
 		0A5A0BCE25E465E10093437A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A5A0BCD25E465E10093437A /* main.m */; };
 		0A5A0BF325E5B9A90093437A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A5A0BF225E5B9A90093437A /* main.m */; };
 		0A5A0BFF25E5BD8B0093437A /* Box.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A5A0BFE25E5BD8B0093437A /* Box.m */; };
@@ -202,6 +204,10 @@
 		0A44EDA825EF01D100BE5534 /* Cook.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Cook.m; sourceTree = "<group>"; };
 		0A44EDB525EF138E00BE5534 /* Chef.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Chef.h; sourceTree = "<group>"; };
 		0A44EDB625EF138E00BE5534 /* Chef.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Chef.m; sourceTree = "<group>"; };
+		0A44EDC325EF159700BE5534 /* DeliveryService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeliveryService.h; sourceTree = "<group>"; };
+		0A44EDC425EF159700BE5534 /* DeliveryService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeliveryService.m; sourceTree = "<group>"; };
+		0A44EDDC25EF15A600BE5534 /* DeliveryCar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeliveryCar.h; sourceTree = "<group>"; };
+		0A44EDDD25EF15A600BE5534 /* DeliveryCar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeliveryCar.m; sourceTree = "<group>"; };
 		0A5A0BCA25E465E10093437A /* Lab1 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Lab1; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A5A0BCD25E465E10093437A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0A5A0BF025E5B9A90093437A /* Lab2 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Lab2; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -376,18 +382,22 @@
 		0A44ED2025EEFF7900BE5534 /* Lab12 */ = {
 			isa = PBXGroup;
 			children = (
+				0A44ED4725EEFFA700BE5534 /* main.m */,
 				0A44ED4625EEFFA700BE5534 /* CheeryManager.h */,
 				0A44ED4E25EEFFA700BE5534 /* CheeryManager.m */,
+				0A44ED4525EEFFA600BE5534 /* PickeyManager.h */,
+				0A44ED4A25EEFFA700BE5534 /* PickeyManager.m */,
 				0A44ED4925EEFFA700BE5534 /* InputHandler.h */,
 				0A44ED4F25EEFFA700BE5534 /* InputHandler.m */,
 				0A44ED4D25EEFFA700BE5534 /* Kitchen.h */,
 				0A44ED4825EEFFA700BE5534 /* Kitchen.m */,
-				0A44ED4725EEFFA700BE5534 /* main.m */,
-				0A44ED4525EEFFA600BE5534 /* PickeyManager.h */,
-				0A44ED4A25EEFFA700BE5534 /* PickeyManager.m */,
 				0A44ED4B25EEFFA700BE5534 /* Pizza.h */,
 				0A44ED4C25EEFFA700BE5534 /* Pizza.m */,
 				0A44ED4425EEFFA600BE5534 /* PizzaRestaurant-Prefix.pch */,
+				0A44EDC325EF159700BE5534 /* DeliveryService.h */,
+				0A44EDC425EF159700BE5534 /* DeliveryService.m */,
+				0A44EDDC25EF15A600BE5534 /* DeliveryCar.h */,
+				0A44EDDD25EF15A600BE5534 /* DeliveryCar.m */,
 			);
 			path = Lab12;
 			sourceTree = "<group>";
@@ -418,8 +428,8 @@
 				0A44EC3425EE389900BE5534 /* Lab8 */,
 				0A44EC6C25EE41AA00BE5534 /* Lab11 */,
 				0AEAB99D25E8D008006D904D /* Lab13 */,
-				0A44ED2025EEFF7900BE5534 /* Lab12 */,
 				0A44ED6525EF003300BE5534 /* Lab9 */,
+				0A44ED2025EEFF7900BE5534 /* Lab12 */,
 				0A5A0BCB25E465E10093437A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -831,7 +841,9 @@
 			files = (
 				0A44ED5425EEFFA700BE5534 /* CheeryManager.m in Sources */,
 				0A44ED5525EEFFA700BE5534 /* InputHandler.m in Sources */,
+				0A44EDDE25EF15A600BE5534 /* DeliveryCar.m in Sources */,
 				0A44ED5325EEFFA700BE5534 /* Pizza.m in Sources */,
+				0A44EDC525EF159700BE5534 /* DeliveryService.m in Sources */,
 				0A44ED5125EEFFA700BE5534 /* Kitchen.m in Sources */,
 				0A44ED5225EEFFA700BE5534 /* PickeyManager.m in Sources */,
 				0A44ED5025EEFFA700BE5534 /* main.m in Sources */,

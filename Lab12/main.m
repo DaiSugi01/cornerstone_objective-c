@@ -24,31 +24,51 @@ int main(int argc, const char * argv[])
         
         CheeryManager *cm;
         PickeyManager *pm;
-                
+        DeliveryService *ds = [DeliveryService new];
+        [ds setDeliveryCar:[DeliveryCar new]];
+
         while (TRUE) {
             // Loop forever
             
-            NSInteger pickedManager = [[InputHandler getUserInput: @"\n"
-                                        "@Which manager would you like?\n"
-                                        "0: Cheery Manager\n"
-                                        "1: Pickey Manager\n"
-                                        "2: other"] intValue];
+            NSInteger pickedOption = [[InputHandler getUserInput: @"\n"
+                                        "Which manager would you like?\n"
+                                        "0: Order pizza with Cheery Manager\n"
+                                        "1: Order pizza with Manager\n"
+                                        "2: Order pizza with other\n"
+                                        "3: display delivered pizza history\n"] intValue];
             
-            switch (pickedManager) {
+            switch (pickedOption) {
                 case 0:
                     if (cm == nil) {
                         cm = [CheeryManager new];
+                        [cm setDeliveryService:ds];
                     }
                     [restaurantKitchen setDelegate: cm];
                     break;
                 case 1:
                     if (pm == nil) {
                         pm = [PickeyManager new];
+                        [pm setDeliveryService:ds];
                     }
                     [restaurantKitchen setDelegate: pm];
                     break;
-                default:
+                case 2:
                     [restaurantKitchen setDelegate: nil];
+                case 3:
+                    if ([[ds getDeliveredPizzaInfo] count] == 0) {
+                        NSLog(@"You diin't order yet.");
+                        continue;
+                    }
+                    
+                    NSLog(@"** Delivery history **");
+                    for (Pizza *deliveredPizza in [ds getDeliveredPizzaInfo]) {
+                        NSLog(@"Pizza with %@", [[deliveredPizza toppings] componentsJoinedByString:@", "]);
+                    }
+                    NSLog(@"***************");
+                    continue;
+                default:
+                    NSLog(@"Invalid option");
+                    continue;
             }
 
             NSString *inputString = [InputHandler getUserInput: @"> "];

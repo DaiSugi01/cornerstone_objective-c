@@ -7,10 +7,13 @@
 
 #import <Foundation/Foundation.h>
 #import "Kitchen.h"
+#import "DeliveryService.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface CheeryManager : NSObject <KitchenDelegate>
+
+@property (nonatomic, weak)DeliveryService *deliveryService;
 
 @end
 

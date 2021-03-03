@@ -13,6 +13,7 @@
 @protocol KitchenDelegate<NSObject>
 
 @required
+
 - (BOOL)kitchen:(Kitchen *)kitchen shouldMakePizzaOfSize:(enum PizzaSize)size andToppings:(NSArray *)toppings;
 - (BOOL)kitchenShouldUpgradeOrder:(Kitchen *)kitchen;
 
